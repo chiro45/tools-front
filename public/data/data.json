@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "nombre": "Python",
+      "links": [
+        {
+          "nombre": "Quiz Python",
+          "link": "https://quiz-python.malbec-defense.com/"
+        },
+        {
+          "nombre": "Quiz Condicionales",
+          "link": "https://quiz-condicionales.malbec-defense.com/"
+        },
+        {
+          "nombre": "Quiz Secuenciales",
+          "link": "https://quiz-secuenciales.malbec-defense.com/"
+        }
+      ]
+    },
+    {
+      "nombre": "PSeInt",
+      "links": [
+        {
+          "nombre": "Quiz PSeInt Básico",
+          "link": "https://quiz-python.malbec-defense.com/"
+        }
+      ]
+    },
+    {
+      "nombre": "Secuenciales",
+      "links": [
+        {
+          "nombre": "Quiz de Secuenciales",
+          "link": "https://quiz-secuenciales.malbec-defense.com/"
+        }
+      ]
+    }
+  ]
+}
