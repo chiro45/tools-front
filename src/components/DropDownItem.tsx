@@ -21,19 +21,23 @@ export const DropdownItem: FC<Props> = ({ item }) => {
 
       {open && (
         <ul className="px-6 p-4 pb-6 space-y-3 animate-fade-in">
-          {item.links.map((herramienta, i) => (
-            <li key={i}>
-              <a
-                href={herramienta.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 transition"
-              >
-                <ExternalLink size={16} />
-                {herramienta.nombre}
-              </a>
-            </li>
-          ))}
+          {item.links.length > 0 ? (
+            item.links.map((herramienta, i) => (
+              <li key={i}>
+                <a
+                  href={herramienta.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-sm text-blue-600 hover:text-blue-500 dark:text-blue-400 dark:hover:text-blue-300 transition"
+                >
+                  <ExternalLink size={16} />
+                  {herramienta.nombre}
+                </a>
+              </li>
+            ))
+          ) : (
+            <p>No hay items</p>
+          )}
         </ul>
       )}
     </div>

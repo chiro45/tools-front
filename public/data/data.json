@@ -19,21 +19,11 @@
     },
     {
       "nombre": "PSeInt",
-      "links": [
-        {
-          "nombre": "Quiz PSeInt Básico",
-          "link": "https://quiz-python.malbec-defense.com/"
-        }
-      ]
+      "links": []
     },
     {
       "nombre": "Secuenciales",
-      "links": [
-        {
-          "nombre": "Quiz de Secuenciales",
-          "link": "https://quiz-secuenciales.malbec-defense.com/"
-        }
-      ]
+      "links": []
     }
   ]
 }

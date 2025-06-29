@@ -19,7 +19,7 @@ export const DropdownList = () => {
       <h1 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">
         Herramientas de Programación
       </h1>
-      <div className="w-full max-w-4xl space-y-6">
+      <div className="w-full max-w-4xl max-h-[65vh] overflow-auto space-y-6">
         {data.map((item, index) => (
           <DropdownItem key={index} item={item} />
         ))}
