@@ -6,20 +6,13 @@ Aplicación web simple hecha con React, TypeScript y Tailwind CSS para mostrar h
 
 ## Instrucciones para levantar el proyecto
 
-1. **Clonar el repositorio**
-
-```bash
-git clone <URL-del-repositorio>
-cd <nombre-del-proyecto>
-```
-
-2. **Instalar dependencias**
+1. **Instalar dependencias**
 
 ```bash
 npm install
 ```
 
-3. **Iniciar servidor de desarrollo**
+2. **Iniciar servidor de desarrollo**
 
 ```bash
 npm run dev
@@ -43,7 +36,7 @@ Para actualizar, editar ese archivo con la estructura adecuada. La aplicación l
 
 ## Tecnologías usadas
 
-- React 
+- React
 - TypeScript
 - Tailwind CSS
 - Lucide Icons (para íconos)
