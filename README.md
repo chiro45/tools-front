@@ -1,69 +1,65 @@
-# React + TypeScript + Vite
+# Front Links Herramientas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web simple hecha con React, TypeScript y Tailwind CSS para mostrar herramientas educativas de programación mediante un listado desplegable.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instrucciones para levantar el proyecto
 
-## Expanding the ESLint configuration
+1. **Clonar el repositorio**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone <URL-del-repositorio>
+cd <nombre-del-proyecto>
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **Instalar dependencias**
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+```
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+3. **Iniciar servidor de desarrollo**
+
+```bash
+npm run dev
+```
+
+El proyecto estará disponible en `http://localhost:5173/`.
+
+---
+
+## Modificar links y datos
+
+La información de las herramientas está almacenada en un archivo JSON ubicado en:
+
+```
+public/data/data.json
+```
+
+Para actualizar, editar ese archivo con la estructura adecuada. La aplicación lee este JSON en tiempo de ejecución para mostrar los datos.
+
+---
+
+## Tecnologías usadas
+
+- React 
+- TypeScript
+- Tailwind CSS
+- Lucide Icons (para íconos)
+
+---
+
+## Estructura general
+
+```
+public/
+  └── data/
+      └── data.json  ← Archivo con datos de herramientas
+
+src/
+  ├── components/       ← Componentes React
+  ├── types/            ← Tipos TypeScript
+  ├── App.tsx           ← Componente principal
+  └── main.tsx          ← Punto de entrada
 ```
